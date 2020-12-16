@@ -31,7 +31,7 @@ print("Part 1", validPasswords)
 
 # Part 2
 
-def isPasswordValid(input):
+def isPasswordValidPt2(input):
   rule = input[0].split("-")
   firstPosition = int(rule[0])
   secondPosition = int(rule[1])
@@ -51,7 +51,7 @@ start = 0
 end = 3
 for i in range(0, int(len(data)/3)): 
   input = data[start:end]
-  if isPasswordValid(input):
+  if isPasswordValidPt2(input):
     validPasswords += 1
   start += 3
   end += 3
